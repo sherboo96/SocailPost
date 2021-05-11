@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommentVC" customModule="SocailPost" customModuleProvider="target">
+            <connections>
+                <outlet property="btnlike" destination="zIb-4g-YyY" id="Lrf-Cw-pz6"/>
+                <outlet property="commentTableView" destination="ald-Re-Kc6" id="EEf-ZP-HbY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="loL-yH-Jse">
+                    <rect key="frame" x="0.0" y="84" width="414" height="778"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YO1-XN-G2I">
+                            <rect key="frame" x="150" y="378.5" width="114" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="YO1-XN-G2I" firstAttribute="centerX" secondItem="loL-yH-Jse" secondAttribute="centerX" id="Bwu-8o-lXm"/>
+                        <constraint firstItem="YO1-XN-G2I" firstAttribute="centerY" secondItem="loL-yH-Jse" secondAttribute="centerY" id="Dpi-Z5-8ye"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ald-Re-Kc6">
+                    <rect key="frame" x="0.0" y="84" width="414" height="778"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBX-ek-g0H">
+                    <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIb-4g-YyY">
+                            <rect key="frame" x="20" y="0.0" width="62.5" height="40"/>
+                            <color key="tintColor" red="0.97609966989999997" green="0.97746044399999998" blue="0.99074178930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="  Like" image="suit.heart" catalog="system"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="zIb-4g-YyY" secondAttribute="bottom" id="1Es-0Z-NnJ"/>
+                        <constraint firstItem="zIb-4g-YyY" firstAttribute="leading" secondItem="EBX-ek-g0H" secondAttribute="leading" constant="20" id="VS3-ux-Kov"/>
+                        <constraint firstItem="zIb-4g-YyY" firstAttribute="top" secondItem="EBX-ek-g0H" secondAttribute="top" id="rR8-qP-JEB"/>
+                        <constraint firstAttribute="height" constant="40" id="xnb-Ha-PF6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EBX-ek-g0H" secondAttribute="trailing" id="5pG-yc-cgn"/>
+                <constraint firstItem="loL-yH-Jse" firstAttribute="top" secondItem="EBX-ek-g0H" secondAttribute="bottom" id="6cc-LV-A0Z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ald-Re-Kc6" secondAttribute="bottom" id="Gi6-45-VNV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="loL-yH-Jse" secondAttribute="trailing" id="Hcu-E8-PWM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ald-Re-Kc6" secondAttribute="trailing" id="Nwo-WM-88W"/>
+                <constraint firstItem="EBX-ek-g0H" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="SeR-bh-M4m"/>
+                <constraint firstItem="EBX-ek-g0H" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="TrP-3i-wF6"/>
+                <constraint firstItem="ald-Re-Kc6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bgL-DQ-MOB"/>
+                <constraint firstItem="loL-yH-Jse" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sIv-TL-LYq"/>
+                <constraint firstItem="ald-Re-Kc6" firstAttribute="top" secondItem="EBX-ek-g0H" secondAttribute="bottom" id="wrU-cd-VBe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="loL-yH-Jse" secondAttribute="bottom" id="x0T-oN-Q63"/>
+            </constraints>
+            <point key="canvasLocation" x="34.782608695652179" y="84.375"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="suit.heart" catalog="system" width="128" height="109"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
